@@ -231,12 +231,12 @@ namespace Lab1_ec
                 for (int j = 0; j < len;j++ )
                 {
                     if (i == j)
-                    { ob[i, j] = 1; }
+                    { ob[i, j] = 1; }  //розставити дужки правильно.
                     else
                     { ob[i, j] = 0; }
-                    
+                                       //видалити зайві пусті рядки
                 }
-                
+        
             }
 
             double arg;
