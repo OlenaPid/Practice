@@ -27,7 +27,7 @@ namespace Lab1_ec
         public RegresForm()
         {
             InitializeComponent();
-         }
+        }
 
         private void OpenFile_Click(object sender, EventArgs e) //Відкриття файлу
         {
@@ -111,7 +111,6 @@ namespace Lab1_ec
                  if (i == 2) textBox2.Text += " \r\n";
                  koef[i] = x[i, 0];
              }
-
         }
        
         static double[,] Multiplication(double[,] a, double[,] b) //Множення 2х матриць
@@ -128,6 +127,7 @@ namespace Lab1_ec
                     }
                 }
             }
+            
             return rez;
         }
 
@@ -158,7 +158,6 @@ namespace Lab1_ec
                     else
                     { ob[i, j] = 0; }
                 }
-
             }
 
             double arg;
@@ -200,8 +199,8 @@ namespace Lab1_ec
                         }
                     }  
                 }
-
             }
+            
             return ob;
         }
 
