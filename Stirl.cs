@@ -34,8 +34,7 @@ namespace Lab1
                             randi[n] = i;
                             randj[n] = j;
                             n++;
-                        }
-                        
+                        } 
                     }
                 }
 
@@ -45,7 +44,6 @@ namespace Lab1
 
                 randomkey[k, 1] = randj[b];
             }
-
         }
 
         public string Encrypt(string str, string[,] matrtext) //Шифрування
@@ -97,7 +95,6 @@ namespace Lab1
                     randomkey[i, j] = Convert.ToInt32(str.Substring(k, 2));
                     k = k + 2;
                 }
-
             }
                  
            for (int i = 0; i < randomkey.GetLength(0); i++)
@@ -109,7 +106,6 @@ namespace Lab1
             return codingtext.ToString();
         }
     }
-
 }
 
 

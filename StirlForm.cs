@@ -17,7 +17,7 @@ namespace Lab1
         
         public string codeline = "";
         public string[,] matrtext;
-        bool checkalf = false;
+        bool checkalfabet = false;      
 
         public Form1()
         {
@@ -96,7 +96,6 @@ namespace Lab1
 
                     n = 0;
                 }
-                
             }        
         }
 
@@ -153,7 +152,6 @@ namespace Lab1
                   {
                      matrtext[i, j] = Convert.ToString(temp[j]);
                   }
-                 
             }
 
             matrtext[matrtext.GetLength(0) - 1, matrtext.GetLength(1) - 1] = " ";          
@@ -210,7 +208,7 @@ namespace Lab1
         {
             textBox2.Text = string.Empty;
         }
-
+        
     }
 }
 

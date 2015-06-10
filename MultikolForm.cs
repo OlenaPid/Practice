@@ -12,7 +12,6 @@ using System.Windows.Forms;
 using System.Threading;
  
 
-
 namespace Lab1_ec
 {
     public partial class MultikolForm : Form
@@ -231,12 +230,15 @@ namespace Lab1_ec
                 for (int j = 0; j < len;j++ )
                 {
                     if (i == j)
-                    { ob[i, j] = 1; }
+                    { 
+                      ob[i, j] = 1;
+                    }  
                     else
-                    { ob[i, j] = 0; }
-                    
+                    { 
+                      ob[i, j] = 0;
+                    }        
                 }
-                
+        
             }
 
             double arg;
@@ -276,10 +278,9 @@ namespace Lab1_ec
                             i1++;
                         }
                     }
-                    
                 }
-                
             }
+            
             return ob;
         }   
 
@@ -377,13 +378,11 @@ namespace Lab1_ec
                         textBox1.Text += "Між незалежна змінними " + dataGridView2.Columns[i].HeaderText + " і " + dataGridView2.Columns[j].HeaderText + " існує мультиколінеарність. \r\n";
                         }
                     }
-                   
                 }
             }
 
             button4.Enabled = false;
         }
-
     }
 
 }

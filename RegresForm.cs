@@ -27,7 +27,7 @@ namespace Lab1_ec
         public RegresForm()
         {
             InitializeComponent();
-         }
+        }
 
         private void OpenFile_Click(object sender, EventArgs e) //Відкриття файлу
         {
@@ -99,15 +99,10 @@ namespace Lab1_ec
             }
 
            double[,] transpmatres = Transp(rez);
-
            double[,] multimatrs = Multiplication(transpmatres, rez);
-
            double[,] ober = Onemftrix(multimatrs, multimatrs.GetLength(0));
-
            double[,] multimatrs2 = Multiplication(transpmatres, mainmatrs);
-
            double[,] x = Multiplication(ober, multimatrs2);
-
            koef = new double[x.GetLength(0)];
 
            for (int i = 0; i < x.GetLength(0); i++)
@@ -116,7 +111,6 @@ namespace Lab1_ec
                  if (i == 2) textBox2.Text += " \r\n";
                  koef[i] = x[i, 0];
              }
-
         }
        
         static double[,] Multiplication(double[,] a, double[,] b) //Множення 2х матриць
@@ -133,6 +127,7 @@ namespace Lab1_ec
                     }
                 }
             }
+            
             return rez;
         }
 
@@ -163,7 +158,6 @@ namespace Lab1_ec
                     else
                     { ob[i, j] = 0; }
                 }
-
             }
 
             double arg;
@@ -203,11 +197,10 @@ namespace Lab1_ec
                             ob[i, i1] = ob[i, i1] / arg_2;
                             i1++;
                         }
-                    }
-
+                    }  
                 }
-
             }
+            
             return ob;
         }
 
