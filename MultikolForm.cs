@@ -278,10 +278,9 @@ namespace Lab1_ec
                             i1++;
                         }
                     }
-                    
                 }
-                
             }
+            
             return ob;
         }   
 
@@ -379,13 +378,11 @@ namespace Lab1_ec
                         textBox1.Text += "Між незалежна змінними " + dataGridView2.Columns[i].HeaderText + " і " + dataGridView2.Columns[j].HeaderText + " існує мультиколінеарність. \r\n";
                         }
                     }
-                   
                 }
             }
 
             button4.Enabled = false;
         }
-
     }
 
 }
