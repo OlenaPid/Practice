@@ -12,7 +12,6 @@ using System.Windows.Forms;
 using System.Threading;
  
 
-
 namespace Lab1_ec
 {
     public partial class MultikolForm : Form
@@ -231,10 +230,13 @@ namespace Lab1_ec
                 for (int j = 0; j < len;j++ )
                 {
                     if (i == j)
-                    { ob[i, j] = 1; }  //розставити дужки правильно.
+                    { 
+                      ob[i, j] = 1;
+                    }  
                     else
-                    { ob[i, j] = 0; }
-                                       //видалити зайві пусті рядки
+                    { 
+                      ob[i, j] = 0;
+                    }        
                 }
         
             }
