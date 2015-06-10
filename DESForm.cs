@@ -40,9 +40,9 @@ namespace Lab1
             }
            
             if (maskedTextBox1.Text.Length < 8)
-            {   //у повідомленні про помилку вкажи користувачу якої довжини ключ має бути
+            {   
                 checkKey = false;
-                MessageBox.Show("Неправильна довжина ключа!"); 
+                MessageBox.Show("Неправильна довжина ключа!. Ключ має бути < 8 символів"); 
             }
 
             codeline = textBox1.Text;
