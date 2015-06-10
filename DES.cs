@@ -15,21 +15,15 @@ namespace Lab1
             string text;
 
             DESCryptoServiceProvider cryptoProvider = new DESCryptoServiceProvider();
-
             cryptoProvider.Key = ASCIIEncoding.ASCII.GetBytes(key);
-
             cryptoProvider.IV = ASCIIEncoding.ASCII.GetBytes(key);
 
             MemoryStream memoryStream = new MemoryStream();
-
             CryptoStream cryptoStream = new CryptoStream(memoryStream, cryptoProvider.CreateEncryptor(), CryptoStreamMode.Write);
-
             StreamWriter writerStream = new StreamWriter(cryptoStream);
 
             writerStream.Write(str);
-
             writerStream.Flush();
-
             cryptoStream.FlushFinalBlock();
 
             text  = Convert.ToBase64String(memoryStream.GetBuffer(), 0, (int)memoryStream.Length);   
@@ -42,15 +36,11 @@ namespace Lab1
             string text;
 
             DESCryptoServiceProvider cryptoProvider = new DESCryptoServiceProvider();
-
             cryptoProvider.Key = ASCIIEncoding.ASCII.GetBytes(key);
-
             cryptoProvider.IV = ASCIIEncoding.ASCII.GetBytes(key);
 
             MemoryStream memoryStream = new MemoryStream(Convert.FromBase64String(str));
-
             CryptoStream cryptoStream = new CryptoStream(memoryStream, cryptoProvider.CreateDecryptor(), CryptoStreamMode.Read);
-            
             StreamReader readerStream = new StreamReader(cryptoStream);
         
             text = readerStream.ReadToEnd();
