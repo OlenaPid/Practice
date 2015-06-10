@@ -60,7 +60,6 @@ namespace Lab1
             {
                 textBox1.Text = File.ReadAllText(o.FileName, Encoding.Default);
             }
-
         }
 
         private void save(object sender, EventArgs e)//Збереження файлу
@@ -73,7 +72,6 @@ namespace Lab1
             {
                 File.WriteAllText(s.FileName, textBox2.Text, Encoding.Default);
             }
-
         }
 
         private void onquery(object sender, EventArgs e)// Заміна місцями текта
@@ -101,7 +99,6 @@ namespace Lab1
                 DES l = new DES();
                 this.textBox2.Text = l.Encrypt(codeline, key);
              }
-           
         }
 
         private void Decrypt(object sender, EventArgs e)//Розшифрування
@@ -113,9 +110,7 @@ namespace Lab1
                 DES l = new DES();
                 this.textBox2.Text = l.Decript(codeline, key);
             }
-            
         }
-             
     }
 }
 
