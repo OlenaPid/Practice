@@ -17,7 +17,7 @@ namespace Lab1
         
         public string codeline = "";
         public string[,] matrtext;
-        bool checkalf = false;      //можна цю змінну переназвати якось? не зразу зрозуміла що вона значить)
+        bool checkalfabet = false;      
 
         public Form1()
         {
