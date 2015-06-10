@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.IO;
 
+// Мені здається тут не варто використовувати так багато порожніх рядків.
 namespace Lab1
 {
     class DES

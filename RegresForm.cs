@@ -98,7 +98,7 @@ namespace Lab1_ec
                 }
             }
 
-           double[,] transpmatres = Transp(rez);
+           double[,] transpmatres = Transp(rez);  //прибрати пусті рядочки
 
            double[,] multimatrs = Multiplication(transpmatres, rez);
 
@@ -203,7 +203,7 @@ namespace Lab1_ec
                             ob[i, i1] = ob[i, i1] / arg_2;
                             i1++;
                         }
-                    }
+                    }  //прибрати пусті рядочки
 
                 }
 
