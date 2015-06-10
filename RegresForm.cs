@@ -98,16 +98,11 @@ namespace Lab1_ec
                 }
             }
 
-           double[,] transpmatres = Transp(rez);  //прибрати пусті рядочки
-
+           double[,] transpmatres = Transp(rez);
            double[,] multimatrs = Multiplication(transpmatres, rez);
-
            double[,] ober = Onemftrix(multimatrs, multimatrs.GetLength(0));
-
            double[,] multimatrs2 = Multiplication(transpmatres, mainmatrs);
-
            double[,] x = Multiplication(ober, multimatrs2);
-
            koef = new double[x.GetLength(0)];
 
            for (int i = 0; i < x.GetLength(0); i++)
@@ -203,8 +198,7 @@ namespace Lab1_ec
                             ob[i, i1] = ob[i, i1] / arg_2;
                             i1++;
                         }
-                    }  //прибрати пусті рядочки
-
+                    }  
                 }
 
             }
